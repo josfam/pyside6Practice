@@ -1,20 +1,19 @@
 from PySide6.QtWidgets import QApplication, QMainWindow, QPushButton
-
-# responsible for processing commandline arguments
 import sys
+
+
+class ButtonHolder(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("Button Holder App")
+        button = QPushButton("Press Me!")
+
+        # make the button our central widget
+        self.setCentralWidget(button)
+
 
 app = QApplication(sys.argv)
 
-window = QMainWindow()
-window.setWindowTitle("Our first MainWindow App!")
-
-# create a button
-button = QPushButton()
-button.setText("Press Me")
-
-window.setCentralWidget(button)
-
+window = ButtonHolder()
 window.show()
-
-# start the event loop
 app.exec()
