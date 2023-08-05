@@ -1,2 +1,7 @@
 # pyside6Practice
-PySide6 GUI practice, courtesy of the 5-hour freeCodeCamp "Learn Python GUI Development..." tutorial
+Practice building Graphical User Interfaces (GUIs) with Python, using PySide6.
+\
+\
+This repo is a result of following the [5-hour freeCodeCamp YouTube tutorial](https://www.youtube.com/watch?v=Z1N9JzNax2k),
+\
+"Learn Python GUI Development for Desktop – PySide6 and Qt Tutorial".
