@@ -10,3 +10,5 @@ This repo is a result of following the [5-hour freeCodeCamp YouTube tutorial](ht
 ![Demo showing a clickable button](demos/1.buttons_example.gif)
 ## Signals and Slots
 ![Demo showing a slider that prints its position to the terminal](demos/2.signals_and_slots.gif)
+## QWidget
+![Demo showing a two clickable buttons that print which one has been clicked to the terminal](demos/3QWidget.gif)
