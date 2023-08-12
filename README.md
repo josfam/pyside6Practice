@@ -7,6 +7,6 @@ This repo is a result of following the [5-hour freeCodeCamp YouTube tutorial](ht
 "Learn Python GUI Development for Desktop – PySide6 and Qt Tutorial".
 # Demos
 ## Basic button
-![](demos/1.buttons_example.gif)
+![Demo showing a clickable button](demos/1.buttons_example.gif)
 ## Signals and Slots
-![](demos/2.signals_and_slots.gif)
+![Demo showing a slider that prints its position to the terminal](demos/2.signals_and_slots.gif)
