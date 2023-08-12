@@ -8,4 +8,5 @@ This repo is a result of following the [5-hour freeCodeCamp YouTube tutorial](ht
 # Demos
 ## Basic button
 ![](demos/1.buttons_example.gif)
-<!-- <video src="demos/1.buttons_example.mp4" width="462" height="205" controls></video> -->
+## Signals and Slots
+![](demos/2.signals_and_slots.gif)
