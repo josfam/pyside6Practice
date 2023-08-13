@@ -1,5 +1,6 @@
 from PySide6.QtWidgets import QApplication, QMainWindow, QToolBar
 from PySide6.QtCore import QSize
+from PySide6.QtGui import QAction
 
 class MainWindow(QMainWindow):
     def __init__(self, app):
@@ -33,5 +34,15 @@ class MainWindow(QMainWindow):
 
         toolbar.addAction(quit_action)
 
+        # add a custom action to the toolbar
+        some_action = QAction("Some Action", self)  # parent is this window
+        some_action.setStatusTip("Status message for some action") # shows on hover
+        some_action.triggered.connect(self.toolbar_button_click)
+        toolbar.addAction(some_action)
+
     def quit_app(self):
         self.app.quit()
+    
+    def toolbar_button_click(self):
+        print("Action triggered")
+
