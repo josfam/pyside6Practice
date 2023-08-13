@@ -1,5 +1,5 @@
-from PySide6.QtWidgets import QApplication, QMainWindow
-
+from PySide6.QtWidgets import QApplication, QMainWindow, QToolBar
+from PySide6.QtCore import QSize
 
 class MainWindow(QMainWindow):
     def __init__(self, app):
@@ -25,6 +25,13 @@ class MainWindow(QMainWindow):
         menu_bar.addMenu("&Window")
         menu_bar.addMenu("&Settings")
         menu_bar.addMenu("&Help")
+
+        # create the toolbar
+        toolbar = QToolBar("My main toolbar")
+        toolbar.setIconSize(QSize(16, 16))
+        self.addToolBar(toolbar) # add the toolbar to this window
+
+        toolbar.addAction(quit_action)
 
     def quit_app(self):
         self.app.quit()
