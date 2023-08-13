@@ -21,5 +21,10 @@ class MainWindow(QMainWindow):
         edit_menu.addAction("Undo")
         edit_menu.addAction("Redo")
 
+        # add other menu options, for fun
+        menu_bar.addMenu("&Window")
+        menu_bar.addMenu("&Settings")
+        menu_bar.addMenu("&Help")
+
     def quit_app(self):
         self.app.quit()
